@@ -1,0 +1,161 @@
+body {
+    font-family:  "Times New Roman", Times, serif;
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614723651_11-p-foni-dlya-odezhdi-11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #ffb805;
+  }
+  .menu {
+    font-family: 'Sintony', sans-serif;
+    background-color: #333;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #333;
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    height: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: center;
+    border-radius: 5px;
+    }
+  .menu li {
+    display: inline-block;
+    }
+  .menu a {
+   text-decoration: none;
+   color: #f2f2f2;
+   padding: 5px 15px;
+   text-decoration: none;
+   border-radius: 5px;
+   }
+  .menu a:hover {
+   background: #FFA500;
+   color: black;
+   margin: 5px;
+   vertical-align: middle;
+  }
+  .content {
+    margin: 20px;
+    text-align:center;
+    font-family: 'Sintony', sans-serif;
+    font-size: 30px;
+  }
+  .card img {
+    border-bottom: 1px solid;
+    border-radius: 5px;
+  }
+  /*Кнопка темы*/
+  .btn-toggle {
+   position:relative;
+    padding: 4px;
+    margin: 1px;
+    float: right;
+    }
+  
+  
+  /* Стили Тёмной темы */
+  body.dark-theme {
+    color: #eee;
+    background: #121212;
+    background: rgba(0, 0, 0, .65) url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614723651_11-p-foni-dlya-odezhdi-11.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+  }
+  body.dark-theme a {
+    color: #809fff;
+  }
+  body.dark-theme > .cards > .card{
+    background: #4e5e5b;
+   }
+  body.dark-theme > .cards > .card:hover {
+    background: #BC8F8F;
+  }
+  
+  /* Стилизация карточки продуката */
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .cards {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 255px);
+    width: 100%;
+    max-width: 1000px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 70px; /* Отступ между колонками */
+    row-gap: 50px; /* Отступ между рядами */
+    margin: 0 auto;
+    }
+  
+  /* Еще стили карточек */
+  
+  .card {
+    width: 229px;
+    min-height: 350px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 5px;
+    transition: 0.2s;
+    border: 1px solid;
+    background-color: white;
+    }
+  /* При наведении на карточку - меняем цвет тени */
+  .card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.5);
+    background-color: #FFA500;
+  }
+  /*Кнопка наверх*/
+  .go-top {
+    position: fixed; /* фиксированное позиционирование */
+    right: 20px; /* отступ слева 20px */
+    top: 90%; /* выравниваем по центру */
+    transform: translateY(-50%); /* выравниваем по центру */
+    cursor: pointer; /* при наведении меняем курсор */
+    display: none; /* по умолчанию скрываем кнопку */
+    font-size: 20px;
+    color: #FFA500;
+    border: 1px solid rgba(0, 51, 153, 0.9);
+    background-color: rgba(0, 51, 153, 0.2);
+    padding: 15px 10px;
+  }
+  
+  /* меняем прозрачность при наведении мышкой */
+  .go-top:hover {
+    color: rgba(0, 51, 153, 0.8);
+    border: 1px solid rgba(0, 51, 153, 0.5);
+    background-color: rgba(0, 51, 153, 0.5);
+  }
+  
+  /* модификатор для отображения кнопки */
+  .go-top--show {
+    display: block;
+  }
+  
+  /* для кнопки купить форма */
+  .form-popup {
+    display: none;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
