@@ -1,0 +1,182 @@
+body {
+    font-family:  "Times New Roman", Times, serif;
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614723651_11-p-foni-dlya-odezhdi-11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header {
+    text-align: center;
+    font-size: 20px;
+    color: #ffb805;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .menu {
+    font-family: 'Sintony', sans-serif;
+    background-color: #333;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #333;
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    height: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: center;
+    border-radius: 5px;
+    vertical-align: middle;
+    }
+  .menu li {
+    display: inline-block;
+    }
+  .menu a {
+   text-decoration: none;
+   color: #f2f2f2;
+   padding: 0px 15px;
+   text-decoration: none;
+   border-radius: 5px;
+   }
+  .menu a:hover {
+   background: #FFA500;
+   color: black;
+   vertical-align: middle;
+  }
+  .content {
+    margin: 20px;
+    text-align:center;
+    font-family: 'Sintony', sans-serif;
+    font-size: 30px;
+  }
+  .card img {
+    border-bottom: 1px solid;
+    border-radius: 5px;
+  }
+  /*Кнопка темы*/
+  #btn-toggle {
+   position:relative;
+    padding: 4px;
+    margin: 1px;
+    float: right;
+    }
+  
+  
+  /* Стили Тёмной темы */
+  body.dark-theme {
+    color: #eee;
+    background: #121212;
+    background: rgba(0, 0, 0, .65) url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614723651_11-p-foni-dlya-odezhdi-11.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+  }
+  body.dark-theme a {
+    color: #809fff;
+  }
+  body.dark-theme > .cards > .card{
+    background: #4e5e5b;
+   }
+  body.dark-theme > .cards > .card:hover {
+    background: #BC8F8F;
+  }
+  
+  /* Стилизация карточки продуката */
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .cards {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 255px);
+    width: 100%;
+    max-width: 1000px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 70px; /* Отступ между колонками */
+    row-gap: 50px; /* Отступ между рядами */
+    margin: 0 auto;
+    }
+  
+  /* Еще стили карточек */
+  
+  .card {
+    width: 229px;
+    min-height: 350px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 5px;
+    transition: 0.2s;
+    border: 1px solid;
+    background-color: white;
+    }
+  /* При наведении на карточку - меняем цвет тени */
+  .card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.5);
+    background-color: #FFA500;
+  }
+  /*Кнопка наверх*/
+  .btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color: #673ab7;
+    /* расстояние от правого края окна браузера */
+    right: 20px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #512da8; /* цвет заднего фона при наведении */
+    }
+  }
+  .form-popup {
+    display:none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
